@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(233, 232, 232);
+    text-align: center;
+}
+
+body{
+    background-image: url("images/kebab.jpg");
+    background-repeat:repeat;
+    background-position: cover;
+}
+
+.history h1{
+    padding-top: 2rem;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-size: 5rem;
+}
+
+.history p {
+    margin-top: 4rem;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    font-size: 2.8rem;
+}
+
+.expansion h2 {
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-size: 3.8rem;
+    margin-top: 18rem;
+}
+
+.expansion p {
+    margin: auto;
+    margin-top: 4rem;
+    max-width: 150rem;
+    font-size: 2.7rem;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
