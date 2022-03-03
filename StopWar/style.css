@@ -122,3 +122,48 @@ body {
     font-family: 'Smooch Sans', sans-serif;
     max-width: 90%;
 }
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    background-color: #2e2e2e;
+    margin-top: 25px;
+}
+
+.footer {
+    width: 80%;
+    margin-top: 30px;
+    background-color: #161616;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer {
+    width: 50%;
+    height: 50%;
+}
+
+.flex-box-card {
+    width: 30%;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-link {
+    margin-top: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+}
