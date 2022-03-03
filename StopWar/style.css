@@ -146,7 +146,7 @@ body {
 
 .logo-footer {
     width: 50%;
-    height: 50%;
+    height: 100%;
 }
 
 .flex-box-card {
@@ -166,4 +166,11 @@ body {
     letter-spacing: 1px;
     font-family: 'Rubik', sans-serif;
     font-size: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-link:hover {
+    color: #383838;
+    transition: 0.5s ease-out;
 }
