@@ -3,6 +3,7 @@ const navLinks = document.querySelector(".nav-links");
 const section1 = document.querySelector(".section1");
 
 let active = false;
+let modify = true;
 const marginLeft = 5;
 
 function moveNavLinks(left, marginLeft) {
@@ -26,12 +27,12 @@ hamburger.addEventListener("click", () => {
 })
 
 const archive = new Map ([
-    ["O'Miricano", 5],
-    ["Turco", 6],
-    ["O'nzivat", 10],
-    ["O'zuzzus", 12],
-    ["O'scem", 10],
-    ["Napulè", 13],
+    ["o miricano", 5],
+    ["turco", 6],
+    ["o nzivat", 10],
+    ["o zuzzus", 12],
+    ["o scem", 10],
+    ["napulè", 13],
 ]);
 
 const buttonConvert = document.getElementById("button-convert");
@@ -39,7 +40,7 @@ const moneyText = document.getElementById("money-text");
 const kebabNameText = document.getElementById("kebab-name");
 const result = document.getElementById("result");
 
-function checkDatas(moneyText, kebabName) {
+function checkDatas(moneyText, kebabName, modify) {
     if(moneyText == "") {
         alert("Devi inserire il numero di soldi");
         return false;
@@ -50,9 +51,14 @@ function checkDatas(moneyText, kebabName) {
     }
 
     else if(!archive.has(kebabName)) {
+        if(archive.has(kebabName.toLowerCase())) {
+            modify = true;
+            return true;
+        }
         alert(`Non esiste alcun kebab con il nome: ${kebabName}`);
         return false;
     }
+
     return true;
 }
 
@@ -69,7 +75,11 @@ buttonConvert.addEventListener("click", () => {
     let money = moneyText.value;
     let kebabname = kebabNameText.value;
 
-    if(checkDatas(money, kebabname)) {
+    if(checkDatas(money, kebabname, modify)) {
+        if(modify) {
+            kebabname = kebabname.toLowerCase();
+            console.log(kebabname);
+        }
         money = Number(money);
         let kebabPrice = archive.get(kebabname);
 
