@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Home</title>
+    </head>
+    <body>
+        <nav class="main-nav">
+            <div class="logo-container">
+                <a href="index.html"><h2>Sciao Belo!!</h2></a>
+            </div>
+            <ul class="nav-links">
+                <li><a class="single-link" href="index.html">Home</a></li>
+                <li><a class="single-link" href="https://www.justeat.it/restaurants-uosm-e-vasm-nola/menu" target="_blank">Contattaci</a></li>
+                <li><a class="single-link" href="menu.html">Menù</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <section class="section1">
+            <div class="card">
+                <div class="card-logo-container">
+                    <h2>Converti in Kebab!!</h2>
+                </div>
+                <div class="info-container">
+                    <h3>Inserire il numero di euro in possesso</h3>
+                </div>
+                <div class="text-container">
+                    <input type="text" id="money-text" maxlength="6">
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="card">
+                <div class="card-logo-container">
+                    <h2>Scegli il Kebab!!</h2>
+                </div>
+                <div class="info-container">
+                    <h3>Inserire il tipo di kebab</h3>
+                </div>
+                <div class="kebab-name-container">
+                    <input type="text" id="kebab-name" maxlength="10">
+                </div>
+                <div class="info-container">
+                    <h3>Clicca il pulsante per convertire</h3>
+                </div>
+                <div class="button-container">
+                    <button id="button-convert">Converti</button>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="card">
+                <div class="info-container">
+                    <h3 id="result">Numero Kebab acquistabili: </h3>
+                </div>
+            </div>
+        </section>
+        <p class="copyright">Copyright © 2022 Vincenzo Caliendo. All rights reserved</p>
+        <script src="index.js"></script>
+    </body>
+</html>
