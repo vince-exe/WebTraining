@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(42, 74, 87);
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 58, 68);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#title {
+    text-align: center;
+    color: rgb(236, 236, 236);  
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.calcolatrice-container {
+    width: 320px;
+    height: 515px;
+    position: absolute;
+    background-color: aquamarine;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(216, 215, 215);
+    width: 100%;
+}
+
+#screen {
+    width: 100%;
+    height: 65px;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    padding-right: 4px;
+    background-color: rgb(75, 133, 101);
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    border: 1.8px solid black;
+    font-family: 'Lato', sans-serif;
+    color: rgb(219, 217, 217);
+    letter-spacing: 1px;
+}
+
+.btn {
+    background-color: rgb(63, 110, 84);
+    border: 1px solid black;
+    height: 90px;
+    width: 80px;
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(236, 235, 235);
+}
+
+.btn:hover {
+    background-color: rgb(54, 99, 75);
+}
+
+.btn-CE {
+    top: 65px;
+    left: 0;
+}
+
+.btn-quadrato {
+    top: 65px;
+    left: 80px;
+}
+
+.btn-radice {
+    top: 65px;
+    left: 160px;
+}
+
+.btn-del {
+    top: 65px;
+    left: 240px;
+}
+
+.btn-7 {
+    top: 155px;
+    left: 0;
+}
+
+.btn-8 {
+    top: 155px;
+    left: 80px;
+}
+
+.btn-9 {
+    top: 155px;
+    left: 160px;
+}
+
+.btn-half {
+    top: 155px;
+    left: 240px;
+}
+
+.btn-4 {
+    top: 245px;
+    left: 0px;
+}
+
+.btn-5 {
+    top: 245px;
+    left: 80px;
+}
+
+.btn-6 {
+    top: 245px;
+    left: 160px;
+}
+
+.btn-mult {
+    top: 245px;
+    left: 240px;
+}
+
+.btn-1 {
+    top: 335px;
+    left: 0px;
+}
+
+.btn-2 {
+    top: 335px;
+    left: 80px;
+}
+
+.btn-3 {
+    top: 335px;
+    left: 160px;
+}
+
+.btn-sub {
+    top: 335px;
+    left: 240px;
+}
+
+.btn-per {
+    top: 425px;
+    left: 0;
+}
+
+.btn-0 {
+    top: 425px;
+    left: 80px;
+}
+
+.btn-pot3 {
+    top: 425px;
+    left: 160px;
+}
+
+.btn-eq{
+    background-color: rgb(45, 82, 62);
+    top: 425px;
+    left: 240px;
+}
+
+.btn-eq:hover {
+    background-color: rgb(38, 71, 53);
+}
