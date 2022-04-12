@@ -9,7 +9,7 @@ const roundsText = document.querySelector("#rounds-text");
 const resultsButton = document.querySelector("#results-button");
 const navBar = document.querySelector(".main-nav");
 
-const urlResults = "http://127.0.0.1:5500/WebDevelopment/QuizApp/results.html";
+const urlResults = "https://web-training.vercel.app/results.html";
 const expireDayCookies = 365;
 
 /*GAME SETTINGS*/
