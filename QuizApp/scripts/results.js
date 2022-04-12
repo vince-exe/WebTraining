@@ -23,13 +23,13 @@ function deleteCookies(name) {
 }
 
 function setResult(numErrori) {
-    if(numErrori >= 0 && numErrori <= 9) {
-        resultText.style.color = red;
-        resultText.textContent = "Sconfitta!!"
+    if(numErrori === 0) {
+        resultText.style.color = green;
+        resultText.textContent = "Vittoria!!"
     }
     else {
-        resultText.style.color = green;
-        resultText.textContent = "Vittoria!!";
+        resultText.style.color = red;
+        resultText.textContent = "Sconfitta!!";
     }
 }
 
@@ -38,12 +38,12 @@ function randomNumber(max) {
 }
 
 function setImage(numErrori) {
-    if(numErrori >= 0 && numErrori <= 9) {
-        document.querySelector("#image-result").src = "./images/lose.png";  
+    if(numErrori === 0) {
+        document.querySelector("#image-result").src = "./images/win.jpg";  
     }
     else {
-        document.querySelector("#image-result").src = "./images/win.jpg";
-    }
+        document.querySelector("#image-result").src = "./images/lose.png";
+    }  
 }
 
 const cookieName1 = "numErrori";
