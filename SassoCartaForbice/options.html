@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Options</title>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <nav class="main-nav">
+            <div class="title-container">
+                <a href="index.html"><h2>Sasso Carta Forbice</h2></a>
+            </div>
+        </nav>
+        <div class="warning">
+            <h2>Nota: se non viene effettutato il salvataggio, le modifiche torneranno allo stato di default</h2>
+        </div>
+        <div class="warning">
+            <h2>Attenzione: per avere una migliore esperienza di gioco, utilizza il sito solo su display con 500 o più pixels</h2>
+        </div>
+        <div class="save-button-container">
+            <button id="save-button">Salva</button>
+        </div>
+        <section class="section1">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/1_background.png" id="section1-img">
+                </div>
+            </div>
+        </section>
+        <section class="options-section">
+            <div class="max-score-container">
+                <label for="change-score-field" id="change-score-label" class="base-label">Massimo Score</label>
+                <input type="text" id="change-score-field" class="base-input-field" placeholder="default: 3" maxlength="1">
+            </div>
+        </section>
+        <p class="copyright">Copyright © 2022 Vincenzo Caliendo. All rights reserved</p>
+        <script src="./js/options.js" type="text/javascript"></script>
+    </body>
+</html>

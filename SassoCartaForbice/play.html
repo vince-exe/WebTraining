@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Play</title>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <nav class="main-nav">
+            <div class="title-container">
+                <a href="index.html"><h2>Sasso Carta Forbice</h2></a>
+            </div>
+        </nav>
+        <div class="rule-container">
+        </div>
+        <section class="section1">
+            <div class="column user-side">
+                <img src="./images/sasso.png" class="image" id="sasso">
+                <img src="./images/mano.png" class="image" id="mano">
+                <img src="./images/forbice.png" class="image" id="forbice">
+            </div>
+            <div class="info-container">
+                <div class="title-container-2">
+                    <h2 id="info-text"></h2>
+                </div>
+                <div class="score-container-general">
+                    <div class="player-container score-container">
+                        <h2 id="user-score">0</h2>
+                    </div>
+                    <div class="robot-container score-container">
+                        <h2 id="robot-score">0</h2>
+                    </div>
+                </div>
+                <div class="results-container">
+                    <div class="result-container">
+                        <h2>Vince</h2>   
+                    </div>
+                    <div class="images-container">
+                        <img src="./images/sasso.png" class="image-user">
+                        <img src="./images/mano.png" class="image-section">
+                        <img src="./images/forbice.png" class="image-robot">
+                    </div>
+                </div>
+            </div>
+            <div class="column robot-side">
+                <img src="./images/sasso.png" class="image">
+                <img src="./images/mano.png" class="image">
+                <img src="./images/forbice.png" class="image">
+            </div>
+        </section>
+        <div class="winner-container">
+            <h2 id="winnerText">Il vincitore è Vincenzo!!</h2>
+        </div>
+        <p class="copyright">Copyright © 2022 Vincenzo Caliendo. All rights reserved</p>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
