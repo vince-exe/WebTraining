@@ -43,8 +43,13 @@ playButton.addEventListener("click", () => {
 })
 
 optionsButton.addEventListener("click", () => {
-    newCookie("username", String(usernameField.value), 365);
-    window.location.replace(optionUrl);
+    if (checkText()) {
+        newCookie("username", String(usernameField.value), 365);
+        window.location.replace(optionUrl);
+    }
+    else {
+        alert(`L'username deve avere minimo ${minChar} caratteri`);
+    }
 })
 
 newCookie("maxScore", String(defaultScore), 365);

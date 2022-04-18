@@ -38,7 +38,7 @@ function checkMove(value, move, value2) {
                 return 0;
             }
             else {
-                /*none*/
+                postImage(winnerImage, 0);
                 return -1;
             }
             
@@ -52,6 +52,7 @@ function checkMove(value, move, value2) {
                 return 0;
             }
             else {
+                postImage(winnerImage, 1);
                 return -1;
             }
 
@@ -65,6 +66,7 @@ function checkMove(value, move, value2) {
                 return 0;
             }
             else {
+                postImage(winnerImage, 2);
                 return -1;
             }
         
