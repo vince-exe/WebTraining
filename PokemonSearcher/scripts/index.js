@@ -80,4 +80,4 @@ const showError = () => {
     document.querySelector(".show_pokemon").style.display = "none";
 }
 
-getPokemon("charmander").then(() => buildPokemon(datas), () => showError());
+getPokemon("bulbasaur").then(() => buildPokemon(datas), () => showError());
